@@ -1,0 +1,37 @@
+
+1. Difference between HTTP1.1 vs HTTP2:
+---------------------------------------
+
+HTTP/1.1:
+HTTP1.1 is the latest version of Hypertext Trasfer Protocol (HTTP), the WorldWide Web application protocol that runs on top of the Internet's TCP/IP suite of protocols. HTTP1.1 provides faster delivery of Web pages than the original HTTP and reduces Web traffic.
+
+Multiplexing: HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+
+HTTP/2:
+HTTP2 enables full request and response multiplexing. In practice, this means a connection made to a web server from your browser can be used to send multiple requests and receive multiple responses. This gets rid of a lot of the additional time that it takes to establish a new connection for each request.
+
+Multiplexing: HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate. In particular, HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loding process.
+
+
+
+2. About objects and its internal representation in Javascript:
+---------------------------------------------------------------
+
+A JavaScript object is a collection of named values having state and behaviour (properties and method).
+For example: person, car pen bike, personal computer, washing machine etc.
+
+Take the case of cars.
+All cars have the same properties, but the property values differ from car to car.
+All cars have the same methods, but the methods are performed at different times.
+
+The following code assigns a simple value (Mercedes) to a variable named car:
+var car = "Mercedes";
+
+Objects are variables too. But objects can contain many values.
+The following code assigns many values (Mercedes, C-class, white and so on) to a variable named Car:
+
+var car = {Make: "Mercedes", Model: "C-Class", Color: "white", Fuel: "Diesel", Weight: "850kg", Mileage: "10kmpl", Rating: 4.5};
+
+So, conclusion and definition for JS objects is "JavaScript objects are containers for named values".
